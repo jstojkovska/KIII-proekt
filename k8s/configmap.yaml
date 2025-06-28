@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+  namespace: kiii-app
+data:
+  SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/vezba1_db
+  SPRING_DATASOURCE_USERNAME: emt
+  VITE_BACKEND_URL: http://backend:8080/api
